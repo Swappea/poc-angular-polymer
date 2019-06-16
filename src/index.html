@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AngularPolymerStarterKit</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <div id="ce-es5-shim">
+    <script type="text/javascript">
+    console.log(window.customElements);
+      if (!window.customElements) {
+        
+        var ceShimContainer = document.querySelector('#ce-es5-shim');
+        console.log('here', ceShimContainer);
+        ceShimContainer.parentElement.removeChild(ceShimContainer);
+      }
+    </script>
+    <!-- This will 404 on ES6 builds, that is intended -->
+    <script type="text/javascript" src="./bower_components/webcomponentsjs/custom-elements-es5-adapter.js"></script>
+  </div>
+  <script src="./bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

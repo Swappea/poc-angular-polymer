@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/es5",
+    "baseUrl": "./",
+    "target": "es5",
+    "types": []
+  },
+  "angularCompilerOptions": {
+    "entryModule": "app/app.module#AppModule",
+    "preserveWhitespaces": "off"
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}
